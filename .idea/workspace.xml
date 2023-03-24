@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="Andmebaas.txt lisamine">
-      <change afterPath="$PROJECT_DIR$/src/Tuba.java" afterDir="false" />
+    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="Kampaaniaga seonduva tegemine">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kampaania.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kampaania.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Plaanid ja motted.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plaanid ja motted.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tuba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tuba.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,12 +73,19 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1679510822953</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="Kampaaniaga seonduva tegemine">
+      <created>1679585332327</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1679585332327</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Andmebaas.txt lisamine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Andmebaas.txt lisamine" />
+    <MESSAGE value="Kampaaniaga seonduva tegemine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kampaaniaga seonduva tegemine" />
   </component>
 </project>
