@@ -4,6 +4,7 @@ abstract class Tuba {
     private boolean kasTubaOnKinni;
     private boolean kasTubaKahele;
 
+
     public Tuba(String toaNumber, boolean kasVIP, boolean kasTubaOnKinni, boolean kasTubaKahele) {
         this.toaNumber = toaNumber;
         this.kasVIP = kasVIP;

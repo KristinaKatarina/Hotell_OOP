@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="TubaKahele errori parandamine">
-      <change afterPath="$PROJECT_DIR$/src/TubaNeljale.java" afterDir="false" />
+    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="TubaNeljale tegemine ja väikeste probleemide lahendamine">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kampaania.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kampaania.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Plaanid ja motted.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plaanid ja motted.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tuba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tuba.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TubaKahele.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TubaKahele.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VipTuba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VipTuba.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TubaNeljale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TubaNeljale.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +94,13 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1679764927081</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="TubaNeljale tegemine ja väikeste probleemide lahendamine">
+      <created>1679768214080</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1679768214080</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -102,6 +109,7 @@
     <MESSAGE value="Kampaaniaga seonduva tegemine" />
     <MESSAGE value="Tuba muutmine abstaktseks klassiks" />
     <MESSAGE value="TubaKahele errori parandamine" />
-    <option name="LAST_COMMIT_MESSAGE" value="TubaKahele errori parandamine" />
+    <MESSAGE value="TubaNeljale tegemine ja väikeste probleemide lahendamine" />
+    <option name="LAST_COMMIT_MESSAGE" value="TubaNeljale tegemine ja väikeste probleemide lahendamine" />
   </component>
 </project>

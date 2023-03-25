@@ -13,5 +13,3 @@ kõik võimalikud teenused mida hotellil pakkuda on.
 
 
 Kristina:
-1.Muutsin Tuba abstraktseks klassiks, sest nõnda töötab kõige paremini Kampaania ja ka sinu poolt kirjutatud kood ei
-muutu sellest.

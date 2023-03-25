@@ -30,6 +30,7 @@ public class Kampaania {
             kampaaniaToad.remove(võitja);
             võitja.setKasTubaOnKinni(false);
             võidetavTuba.setKasTubaOnKinni(true);
+            // hiljem tuleb lisada kood, mis võidetud toa ööde arvu muudaks
             System.out.println("Kampaania võitis tuba number " + võitja.getToaNumber() +
                     ", selles toas viibivad külalised tõsteti ümber VIP tuppa " + võidetavTuba.getToaNumber());
         }
