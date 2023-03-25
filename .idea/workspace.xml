@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="Tuba muutmine abstaktseks klassiks">
+    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="TubaKahele errori parandamine">
+      <change afterPath="$PROJECT_DIR$/src/TubaNeljale.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tuba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tuba.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TubaKahele.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TubaKahele.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VipTuba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VipTuba.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +87,13 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1679676763915</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="TubaKahele errori parandamine">
+      <created>1679764927081</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1679764927081</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -90,6 +101,7 @@
     <MESSAGE value="Andmebaas.txt lisamine" />
     <MESSAGE value="Kampaaniaga seonduva tegemine" />
     <MESSAGE value="Tuba muutmine abstaktseks klassiks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tuba muutmine abstaktseks klassiks" />
+    <MESSAGE value="TubaKahele errori parandamine" />
+    <option name="LAST_COMMIT_MESSAGE" value="TubaKahele errori parandamine" />
   </component>
 </project>

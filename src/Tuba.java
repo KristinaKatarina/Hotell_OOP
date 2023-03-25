@@ -21,7 +21,6 @@ abstract class Tuba {
     }
 
 
-
     public boolean isKasTubaOnKinni() {
         return kasTubaOnKinni;
     }
@@ -31,8 +30,14 @@ abstract class Tuba {
     }
 
 
+    abstract double lisaPakettideHind();
 
     abstract double öödeHind();
-    abstract double lisaPakettideHind();
-    abstract double hindKokku(); // Defineerime, et igas "Tuba kahele" ja "Tuba neljale" klassi peab eksisteerima meetod hindKokku.
+
+    // tegin hindKokku avalikuks, sest see kood on TubaNeljale ja TubaKahele klassides ühine
+    public double hindKokku() {
+        // Hind kokku.
+        return öödeHind() + lisaPakettideHind();
+    }
+
 }

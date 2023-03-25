@@ -4,12 +4,11 @@ import java.util.List;
 public class TubaKahele extends Tuba {
     // Tegemist on ökonoomia toaga
 
-    private int toaNumber;
     private int öödeArv;
     private List<String> paketid = new ArrayList<>(List.of("Hommikusöök")); // Ekonoomia klassis on vaikeväärtusega paketis ainult hommikusöök, mis on hinna sees.
     protected double ööHind; // Siin on ööHind protected, kuna VIP toa puhul lisame hinnale lihtsalt VIP väärtuse otsa. (alamklass)
 
-    public TubaKahele(String toaNumber, boolean kasVIP, boolean kasTubaOnKinni, boolean kasTubaKahele, int toaNumber1, int öödeArv, List<String> paketid, double ööHind, List<String> lisaPaketid) {
+    public TubaKahele(String toaNumber, boolean kasVIP, boolean kasTubaOnKinni, boolean kasTubaKahele, int öödeArv, List<String> lisaPaketid) {
         super(toaNumber, kasVIP, kasTubaOnKinni, kasTubaKahele);
         this.öödeArv = öödeArv;
         this.ööHind = 40; // Olgu 1 ökonoomia tuba kahele öö arv 40 eurot.
@@ -39,10 +38,6 @@ public class TubaKahele extends Tuba {
         return pakettideHind;
     }
 
-    @Override
-    public double hindKokku() {
-        // Hind kokku.
-        return öödeHind() + lisaPakettideHind();
-    }
+
 
 }
