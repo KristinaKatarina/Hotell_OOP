@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class TubaKahele implements Tuba{
+public class TubaKahele extends Tuba {
     // Tegemist on ökonoomia toaga
 
     private int toaNumber;
@@ -9,14 +9,16 @@ public class TubaKahele implements Tuba{
     private List<String> paketid = new ArrayList<>(List.of("Hommikusöök")); // Ekonoomia klassis on vaikeväärtusega paketis ainult hommikusöök, mis on hinna sees.
     protected double ööHind; // Siin on ööHind protected, kuna VIP toa puhul lisame hinnale lihtsalt VIP väärtuse otsa. (alamklass)
 
-    public TubaKahele(int toaNumber, int öödeArv, List<String> lisaPaketid) {
-        this.toaNumber = toaNumber;
+    public TubaKahele(String toaNumber, boolean kasVIP, boolean kasTubaOnKinni, boolean kasTubaKahele, int toaNumber1, int öödeArv, List<String> paketid, double ööHind, List<String> lisaPaketid) {
+        super(toaNumber, kasVIP, kasTubaOnKinni, kasTubaKahele);
         this.öödeArv = öödeArv;
         this.ööHind = 40; // Olgu 1 ökonoomia tuba kahele öö arv 40 eurot.
 
         if (!lisaPaketid.isEmpty()) // Kui meie klient ei soovinud kõike VIP teenuseid, vaid üksikuid teenuseid, siis lisame need paketti. Näiteks spaa.
             paketid.addAll(lisaPaketid); // Kui lisame lisapaketi, siis las olla see formaardis (paketi nimi);(hind). Näiteks spaa;20 . Nii saame lõpus selle 20 muuta Integer ja kokku arvutada hinna.
     }
+
+
 
 
     @Override
