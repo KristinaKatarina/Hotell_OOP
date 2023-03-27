@@ -2,20 +2,16 @@ abstract class Tuba {
     private String toaNumber;
     private boolean kasVIP;
     private boolean kasTubaOnKinni;
-    private boolean kasTubaKahele;
 
-
-    public Tuba(String toaNumber, boolean kasVIP, boolean kasTubaOnKinni, boolean kasTubaKahele) {
+    public Tuba(String toaNumber, boolean kasVIP, boolean kasTubaOnKinni) {
         this.toaNumber = toaNumber;
         this.kasVIP = kasVIP;
         this.kasTubaOnKinni = kasTubaOnKinni;
-        this.kasTubaKahele = kasTubaKahele;
     }
 
     public String getToaNumber() {
         return toaNumber;
     }
-
 
     public boolean isKasVIP() {
         return kasVIP;
@@ -29,7 +25,6 @@ abstract class Tuba {
     public void setKasTubaOnKinni(boolean kasTubaOnKinni) {
         this.kasTubaOnKinni = kasTubaOnKinni;
     }
-
 
     abstract double lisaPakettideHind();
 

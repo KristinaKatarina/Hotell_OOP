@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Kampaania {
+
     private List<Tuba> kampaaniaToad;
     private Tuba võidetavTuba; //anname ette vip toa, mille saab võita
 
@@ -18,7 +19,6 @@ public class Kampaania {
         int juhuslikArv = (int) Math.round(Math.random() * (kampaaniaToad.size()-1));
         Tuba võitja = kampaaniaToad.get(juhuslikArv);
         return võitja;
-
     }
 
     public void muudaVõitjaTuba() {

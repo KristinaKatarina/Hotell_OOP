@@ -1,0 +1,15 @@
+Smirix:
+
+1. Mõtlesin et igal toal võib olla erinevad paketid millel on oma hind. Näiteks kui broneeritakse ökonoomia tuba, siis
+sellel tuleb vaikeväärtusena ainult kaasa hommikusöök, kuid alati on kliendil võimalik midagi juurde võtta mis meil
+hotellis olemas on, näiteks spaa, saun, lõunasöök? jne. Kui klient valib VIP toa, siis vaikeväärtusena juba anname kaasa
+kõik võimalikud teenused mida hotellil pakkuda on.
+
+2. Teiseks et igal hotellil voiks olla mingi reiting ja klientide tagasiside, need leiad klassist Hotell
+
+
+
+
+
+
+Kristina:

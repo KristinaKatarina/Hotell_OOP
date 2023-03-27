@@ -1,22 +1,26 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class TubaNeljale extends Tuba implements VipTuba {
+public class TubaNeljale extends Tuba implements VipTuba{
+
     private int öödeArv;
     private List<String> paketid = new ArrayList<>(List.of("Hommikusöök"));
 
     // juhul kui tuba on kinni
-    public TubaNeljale(String toaNumber, boolean kasVIP, boolean kasTubaOnKinni, boolean kasTubaKahele, int öödeArv, List<String> lisaPaketid) {
-        super(toaNumber, kasVIP, kasTubaOnKinni, kasTubaKahele);
+    public TubaNeljale(String toaNumber, boolean kasVIP, boolean kasTubaOnKinni, int öödeArv, List<String> lisaPaketid) {
+        super(toaNumber, kasVIP, kasTubaOnKinni);
         this.öödeArv = öödeArv;
         if (!lisaPaketid.isEmpty())
             paketid.addAll(lisaPaketid);
-
     }
 
     // juhul kui tuba on vaba (siis ei ole ööde arvu ja paketti teada)
-    public TubaNeljale(String toaNumber, boolean kasVIP, boolean kasTubaOnKinni, boolean kasTubaKahele) {
-        super(toaNumber, kasVIP, kasTubaOnKinni, kasTubaKahele);
+    public TubaNeljale(String toaNumber, boolean kasVIP, boolean kasTubaOnKinni) {
+        super(toaNumber, kasVIP, kasTubaOnKinni);
+    }
+
+    public double VipToaHind() {
+        return hindKokku() + 80; //vip toa hind oleks nt 80 eurot
     }
 
     @Override
@@ -36,8 +40,4 @@ public class TubaNeljale extends Tuba implements VipTuba {
     }
 
 
-    @Override
-    public double VipToaHind() {
-        return hindKokku() + 80; //vip toa hind oleks nt 80 eurot
-    }
 }

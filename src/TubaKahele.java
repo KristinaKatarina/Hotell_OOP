@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class TubaKahele extends Tuba implements VipTuba {
+public class TubaKahele extends Tuba implements VipTuba{
     // Tegemist on ökonoomia toaga
 
     private int öödeArv;
@@ -9,8 +9,8 @@ public class TubaKahele extends Tuba implements VipTuba {
     protected double ööHind; // Siin on ööHind protected, kuna VIP toa puhul lisame hinnale lihtsalt VIP väärtuse otsa. (alamklass)
 
     //juhul kui tuba on kinni
-    public TubaKahele(String toaNumber, boolean kasVIP, boolean kasTubaOnKinni, boolean kasTubaKahele, int öödeArv, List<String> lisaPaketid) {
-        super(toaNumber, kasVIP, kasTubaOnKinni, kasTubaKahele);
+    public TubaKahele(String toaNumber, boolean kasVIP, boolean kasTubaOnKinni, int öödeArv, List<String> lisaPaketid) {
+        super(toaNumber, kasVIP, kasTubaOnKinni);
         this.öödeArv = öödeArv;
         this.ööHind = 40; // Olgu 1 ökonoomia tuba kahele öö arv 40 eurot.
 
@@ -19,8 +19,12 @@ public class TubaKahele extends Tuba implements VipTuba {
     }
 
     // juhul kui tuba on vaba (siis ei ole ööde arvu ja paketti teada)
-    public TubaKahele(String toaNumber, boolean kasVIP, boolean kasTubaOnKinni, boolean kasTubaKahele) {
-        super(toaNumber, kasVIP, kasTubaOnKinni, kasTubaKahele);
+    public TubaKahele(String toaNumber, boolean kasVIP, boolean kasTubaOnKinni) {
+        super(toaNumber, kasVIP, kasTubaOnKinni);
+    }
+
+    public double VipToaHind() {
+        return hindKokku() + 40; //panin vip toa hinnaks 40 eurot
     }
 
 
@@ -43,8 +47,4 @@ public class TubaKahele extends Tuba implements VipTuba {
     }
 
 
-    @Override
-    public double VipToaHind() {
-        return hindKokku() + 40; //panin vip toa hinnaks 40 eurot
-    }
 }
