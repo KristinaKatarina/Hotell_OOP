@@ -4,11 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="Andmebaasi täitmine">
+    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="VipTuba liideseks tegemine">
+      <change afterPath="$PROJECT_DIR$/Hotellid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KampaaniaKäivitamine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Andmebaas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Andmebaas.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hotell/Hotell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/Hotell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hotell/Kampaania.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/Kampaania.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hotell/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hotell/Tuba.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/Tuba.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hotell/TubaKahele.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/TubaKahele.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hotell/TubaNeljale.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/TubaNeljale.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hotell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hotell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kampaania.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kampaania.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kasutajaliides.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kasutajaliides.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TubaKahele.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TubaKahele.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TubaNeljale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TubaNeljale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VipTuba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VipTuba.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

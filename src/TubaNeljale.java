@@ -33,7 +33,7 @@ public class TubaNeljale extends Tuba implements VipTuba{
         double pakettideHind = 0;
 
         for (String pakett : paketid) {
-            double paketiHind = (Integer.parseInt(pakett.split(";")[1])) * 1.5; // tegin paketi 1,5 korda kallimaks,
+            double paketiHind = (Integer.parseInt(pakett.split(":")[1])) * 1.5; // tegin paketi 1,5 korda kallimaks,
             pakettideHind += paketiHind;                                            // sest toas on rohkem inimesi
         }
         return pakettideHind;

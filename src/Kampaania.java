@@ -3,13 +3,7 @@ import java.util.List;
 
 public class Kampaania {
 
-    private List<Tuba> kampaaniaToad;
-    private Tuba võidetavTuba; //anname ette vip toa, mille saab võita
-
-    public Kampaania( Tuba võidetavTuba) {
-        this.kampaaniaToad = new ArrayList<>();
-        this.võidetavTuba = võidetavTuba;
-    }
+    List<Tuba> kampaaniaToad = new ArrayList<>();
 
     public void lisaKampaaniasse(Tuba tuba) {
         kampaaniaToad.add(tuba);
@@ -21,7 +15,7 @@ public class Kampaania {
         return võitja;
     }
 
-    public void muudaVõitjaTuba() {
+    public void muudaVõitjaTuba(Tuba võidetavTuba) {
         Tuba võitja = leiaVõitja();
         if (võidetavTuba.isKasTubaOnKinni() || võidetavTuba.isKasVIP() == false) {      //juhul kui VIP tuba on juba kinni
             System.out.println("Kamapaanias võidetav tuba ei vasta tingimustele");      // või on tavaline tuba
@@ -36,5 +30,7 @@ public class Kampaania {
         }
 
     }
+
+
 
 }

@@ -40,7 +40,7 @@ public class TubaKahele extends Tuba implements VipTuba{
         double pakettideHind = 0;
 
         for (String pakett : paketid) {
-            double paketiHind = Integer.parseInt(pakett.split(";")[1]); // Näiteks spaa;19.99 saame hinna 19.99.
+            double paketiHind = Integer.parseInt(pakett.split(":")[1]); // Näiteks spaa;19.99 saame hinna 19.99.
             pakettideHind += paketiHind;
         }
         return pakettideHind;

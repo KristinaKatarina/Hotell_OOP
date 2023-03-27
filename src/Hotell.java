@@ -38,4 +38,16 @@ public class Hotell {
         }
         return hinnangudKokku / this.klientideHinnangud.size();
     }
+
+    @Override
+    public String toString() {
+        return "Hotell{" +
+                "riik='" + riik + '\'' +
+                ", aadress='" + aadress + '\'' +
+                ", hotelliReiting=" + hotelliReiting +
+                ", asutamisAasta=" + asutamisAasta +
+                ", toadHotellis=" + toadHotellis +
+                ", klientideHinnangud=" + klientideHinnangud +
+                '}';
+    }
 }
