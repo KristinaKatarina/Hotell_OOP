@@ -4,23 +4,34 @@ import java.util.List;
 public class TubaNeljale extends Tuba implements VipTuba{
 
     private int öödeArv;
-    private List<String> paketid = new ArrayList<>(List.of("Hommikusöök"));
+    private List<String> paketid = new ArrayList<>(List.of("Hommikusöök:0"));
 
     // juhul kui tuba on kinni
-    public TubaNeljale(String toaNumber, boolean kasVIP, boolean kasTubaOnKinni, int öödeArv, List<String> lisaPaketid) {
-        super(toaNumber, kasVIP, kasTubaOnKinni);
+    public TubaNeljale(String hotell, String toaNumber, boolean kasVIP, boolean kasTubaOnKinni, int öödeArv, List<String> lisaPaketid) {
+        super(hotell, toaNumber, kasVIP, kasTubaOnKinni);
         this.öödeArv = öödeArv;
         if (!lisaPaketid.isEmpty())
             paketid.addAll(lisaPaketid);
     }
 
     // juhul kui tuba on vaba (siis ei ole ööde arvu ja paketti teada)
-    public TubaNeljale(String toaNumber, boolean kasVIP, boolean kasTubaOnKinni) {
-        super(toaNumber, kasVIP, kasTubaOnKinni);
+    public TubaNeljale(String hotell,String toaNumber, boolean kasVIP, boolean kasTubaOnKinni) {
+        super(hotell, toaNumber, kasVIP, kasTubaOnKinni);
+    }
+
+
+
+    public void setÖödeArv(int öödeArv) {
+        this.öödeArv = öödeArv;
+    }
+
+
+    public void setPaketid(List<String> paketid) {
+        this.paketid = paketid;
     }
 
     public double VipToaHind() {
-        return hindKokku() + 80; //vip toa hind oleks nt 80 eurot
+        return this.hindKokku() + 60*öödeArv; //vip toa hind oleks nt 80 eurot
     }
 
     @Override
@@ -28,7 +39,7 @@ public class TubaNeljale extends Tuba implements VipTuba{
         return 70 * this.öödeArv; // panin ühe öö hinnaks 70
     }
 
-    @Override
+
     double lisaPakettideHind() {
         double pakettideHind = 0;
 
@@ -38,6 +49,18 @@ public class TubaNeljale extends Tuba implements VipTuba{
         }
         return pakettideHind;
     }
+    public String toString() {
+        if (!isKasVIP()) {
+            return "Toa number: " + getToaNumber() +
+                    ", toa paketid on " + paketid +
+                    ", toa hind on " + hindKokku() +
+                    ", tuba on neljale";
+        }
+        return "Toa number: " + getToaNumber() +
+                ", tegu on VIP toaga, toa hind on " + VipToaHind() +
+                ", tuba on neljale";
+    }
+
 
 
 }

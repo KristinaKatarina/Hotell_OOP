@@ -1,12 +1,20 @@
+import java.util.List;
+
 abstract class Tuba {
+    private String hotell;
     private String toaNumber;
     private boolean kasVIP;
     private boolean kasTubaOnKinni;
 
-    public Tuba(String toaNumber, boolean kasVIP, boolean kasTubaOnKinni) {
+    public Tuba(String hotell,String toaNumber, boolean kasVIP, boolean kasTubaOnKinni) {
+        this.hotell = hotell;
         this.toaNumber = toaNumber;
         this.kasVIP = kasVIP;
         this.kasTubaOnKinni = kasTubaOnKinni;
+    }
+
+    public String getHotell() {
+        return hotell;
     }
 
     public String getToaNumber() {
@@ -25,6 +33,8 @@ abstract class Tuba {
     public void setKasTubaOnKinni(boolean kasTubaOnKinni) {
         this.kasTubaOnKinni = kasTubaOnKinni;
     }
+    abstract void setÖödeArv(int öödeArv);
+    abstract void setPaketid(List<String> paketid);
 
     abstract double lisaPakettideHind();
 

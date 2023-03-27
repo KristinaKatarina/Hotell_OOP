@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
+    private static List<Hotell> hotellid = loeHotellid("Hotellid.txt");
 
     public static List<Hotell> loeHotellid(String failiNimi) {
         List<Hotell> hotellid = new ArrayList<>();
@@ -15,7 +16,7 @@ public class Main {
                 List<String> tükid = List.of(rida.split(";"));
                 int reitinig = Integer.parseInt(tükid.get(3));
                 int asutamisaasta = Integer.parseInt(tükid.get(4));
-                Hotell hotell = new Hotell(tükid.get(1), tükid.get(2), reitinig, asutamisaasta);
+                Hotell hotell = new Hotell(tükid.get(0), tükid.get(1), tükid.get(2), reitinig, asutamisaasta);
                 hotellid.add(hotell);
             }
         } catch (FileNotFoundException e) {
@@ -56,28 +57,35 @@ public class Main {
                     }
                 }
                 if (kasTubaOnKahele) {
+                    Tuba tuba;
                     if (kasTubaOnKinni) {
-                        Tuba tuba = new TubaKahele(tükid.get(1), kasVIP, true, ööd, paketid);
-                        toad.add(tuba);
+                        tuba = new TubaKahele(tükid.get(0), tükid.get(1), kasVIP, true, ööd, paketid);
+
                     } else {
-                        Tuba tuba = new TubaKahele(tükid.get(1), kasVIP, false);
-                        toad.add(tuba);
+                        tuba = new TubaKahele(tükid.get(0), tükid.get(1), kasVIP, false);
                     }
-                }
-                if (!kasTubaOnKahele) {
+                    toad.add(tuba);
+                    hotellideSidumineTubadega(tuba);
+                } else {
+                    Tuba tuba;
                     if (kasTubaOnKinni) {
-                        Tuba tuba = new TubaNeljale(tükid.get(1), kasVIP, true, ööd, paketid);
-                        toad.add(tuba);
+                        tuba = new TubaNeljale(tükid.get(0), tükid.get(1), kasVIP, kasTubaOnKinni, ööd, paketid);
+
+
                     } else {
-                        Tuba tuba = new TubaNeljale(tükid.get(1), kasVIP, false);
-                        toad.add(tuba);
+                        tuba = new TubaNeljale(tükid.get(0), tükid.get(1), kasVIP, kasTubaOnKinni);
                     }
+                    toad.add(tuba);
+                    hotellideSidumineTubadega(tuba);
 
                 }
 
 
             }
-        } catch (FileNotFoundException e) {
+
+
+        } catch (
+                FileNotFoundException e) {
             throw new RuntimeException(e);
         }
         return toad;
@@ -85,9 +93,89 @@ public class Main {
 
     }
 
+    public static void hotellideSidumineTubadega(Tuba tuba) {
+        for (int i = 0; i < hotellid.size(); i++) {
+            // kas hotelli nimi klappib hotelli nimega, kus tuba asub
+            if (hotellid.get(i).getNimi().equals(tuba.getHotell())) {
+                hotellid.get(i).loeSisseTuba(tuba);
+            }
+        }
 
-    public static void main(String[] args) {
-        System.out.println(loeToad("Andmebaas.txt"));
+    }
+
+    public static List<Tuba> leiaVabadToad(List<Tuba> toad) {
+        List<Tuba> sobilikudToad = new ArrayList<>();
+        for (int i = 0; i < toad.size(); i++) {
+            if (!toad.get(i).isKasTubaOnKinni()) {
+                sobilikudToad.add(toad.get(i));
+            }
+        }
+        return sobilikudToad;
+    }
+
+    public static List<Tuba> leiaVipToad(List<Tuba> toad, int tase) {
+        List<Tuba> sobilikudToad = new ArrayList<>();
+        if (tase == 1) {
+            for (int i = 0; i < toad.size(); i++) {
+                if (!toad.get(i).isKasVIP()) {
+                    sobilikudToad.add(toad.get(i));
+                }
+            }
+            return sobilikudToad;
+        }
+        if (tase == 2) {
+            for (int i = 0; i < toad.size(); i++) {
+                if (toad.get(i).isKasVIP()) {
+                    sobilikudToad.add(toad.get(i));
+                }
+            }
+            return sobilikudToad;
+        }
+        return sobilikudToad;
+    }
+
+
+    public static void main(String[] args) throws IOException {
+        loeToad("Andmebaas.txt");
+        Kasutajaliides kasutajaliides = new Kasutajaliides();
+        List<List> kasutajaValikud = kasutajaliides.kysiKliendilt();
+        int valitudHotelliNumber = Integer.parseInt((String) kasutajaValikud.get(0).get(0));
+        int valitudToaSuurus = Integer.parseInt((String) kasutajaValikud.get(1).get(0));
+        int valitudToaTase = Integer.parseInt((String) kasutajaValikud.get(2).get(0));
+        int ööd = Integer.parseInt((String) kasutajaValikud.get(3).get(0));
+        Hotell valitudHotell = hotellid.get(valitudHotelliNumber - 1);
+        List<Tuba> hotelliToad = valitudHotell.getToadHotellis();
+        // leiame hotelli toad, mis on vabad
+        List<Tuba> vabadToad = leiaVabadToad(hotelliToad);
+        if (valitudToaSuurus == 1) {
+            for (int i = 0; i < vabadToad.size(); i++) {
+                if (vabadToad.get(i).getClass() == TubaNeljale.class) {
+                    vabadToad.remove(i);
+
+                }
+
+            }
+        } else if (valitudToaSuurus == 2) {
+            for (int i = 0; i < vabadToad.size(); i++) {
+                if (vabadToad.get(i).getClass() == TubaKahele.class) {
+                    vabadToad.remove(i);
+
+                }
+            }
+        }
+        List<Tuba> sobivadToad = leiaVipToad(vabadToad, valitudToaTase); //leiame vip/ekonoomia toad vastavalt kasutaja soovile
+        if (sobivadToad.size() == 0) {
+            System.out.println("Kahjuks ei ole hetkel sellist tuba saadaval");
+        } else {
+            System.out.println(sobivadToad);
+            int juhuslikArv = (int) Math.round(Math.random() * (sobivadToad.size() - 1));
+            Tuba valitudTuba = sobivadToad.get(juhuslikArv);
+            System.out.println(valitudTuba);
+            valitudTuba.setKasTubaOnKinni(true);
+            valitudTuba.setÖödeArv(ööd);
+            //valitudTuba.setPaketid();
+        }
+
 
     }
 }

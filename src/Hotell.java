@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Hotell {
+    private String nimi;
 
     private String riik; // Kus riigis meie hotell asub, näiteks Eesti.
     private String aadress; // Meie hotelli aadress, naiteks Rävala tee 3
@@ -11,12 +12,21 @@ public class Hotell {
 
     private List<Integer> klientideHinnangud; // Meie hotelli klientide reiting, iga element (0-5), näiteks saame võimalusel küsida kui klient lahkub.
 
-    public Hotell(String riik, String aadress, int hotelliReiting, int asutamisAasta) {
+    public Hotell(String nimi,String riik, String aadress, int hotelliReiting, int asutamisAasta) {
+        this.nimi = nimi;
         this.riik = riik;
         this.aadress = aadress;
         this.hotelliReiting = hotelliReiting;
         this.asutamisAasta = asutamisAasta;
         this.toadHotellis = new ArrayList<>();
+    }
+
+    public String getNimi() {
+        return nimi;
+    }
+
+    public List<Tuba> getToadHotellis() {
+        return toadHotellis;
     }
 
     public void loeSisseTuba(Tuba tuba){

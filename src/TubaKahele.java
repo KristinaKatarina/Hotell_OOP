@@ -1,16 +1,16 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class TubaKahele extends Tuba implements VipTuba{
+public class TubaKahele extends Tuba implements VipTuba {
     // Tegemist on ökonoomia toaga
 
     private int öödeArv;
-    private List<String> paketid = new ArrayList<>(List.of("Hommikusöök")); // Ekonoomia klassis on vaikeväärtusega paketis ainult hommikusöök, mis on hinna sees.
+    private List<String> paketid = new ArrayList<>(List.of("Hommikusöök:0")); // Ekonoomia klassis on vaikeväärtusega paketis ainult hommikusöök, mis on hinna sees.
     protected double ööHind; // Siin on ööHind protected, kuna VIP toa puhul lisame hinnale lihtsalt VIP väärtuse otsa. (alamklass)
 
     //juhul kui tuba on kinni
-    public TubaKahele(String toaNumber, boolean kasVIP, boolean kasTubaOnKinni, int öödeArv, List<String> lisaPaketid) {
-        super(toaNumber, kasVIP, kasTubaOnKinni);
+    public TubaKahele(String hotell, String toaNumber, boolean kasVIP, boolean kasTubaOnKinni, int öödeArv, List<String> lisaPaketid) {
+        super(hotell, toaNumber, kasVIP, kasTubaOnKinni);
         this.öödeArv = öödeArv;
         this.ööHind = 40; // Olgu 1 ökonoomia tuba kahele öö arv 40 eurot.
 
@@ -19,12 +19,15 @@ public class TubaKahele extends Tuba implements VipTuba{
     }
 
     // juhul kui tuba on vaba (siis ei ole ööde arvu ja paketti teada)
-    public TubaKahele(String toaNumber, boolean kasVIP, boolean kasTubaOnKinni) {
-        super(toaNumber, kasVIP, kasTubaOnKinni);
+    public TubaKahele(String hotell, String toaNumber, boolean kasVIP, boolean kasTubaOnKinni) {
+        super(hotell, toaNumber, kasVIP, kasTubaOnKinni);
+    }
+    public void setÖödeArv(int öödeArv) {
+        this.öödeArv = öödeArv;
     }
 
-    public double VipToaHind() {
-        return hindKokku() + 40; //panin vip toa hinnaks 40 eurot
+    public void setPaketid(List<String> paketid) {
+        this.paketid = paketid;
     }
 
 
@@ -44,6 +47,22 @@ public class TubaKahele extends Tuba implements VipTuba{
             pakettideHind += paketiHind;
         }
         return pakettideHind;
+    }
+
+    public double VipToaHind() {
+        return this.hindKokku() + 30 * öödeArv; //panin vip toa hinnaks 40 eurot
+    }
+
+    public String toString() {
+        if (!isKasVIP()) {
+            return "Toa number: " + getToaNumber() +
+                    ", toa paketid on " + paketid +
+                    ", toa hind on " + hindKokku() +
+                    ", tuba on kahele";
+        }
+        return "Toa number: " + getToaNumber() +
+                ", tegu on VIP toaga, toa hind on " + VipToaHind() +
+                ", tuba on kahele";
     }
 
 

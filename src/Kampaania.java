@@ -1,21 +1,21 @@
 import java.util.ArrayList;
 import java.util.List;
-
+//remondis
 public class Kampaania {
 
-    List<Tuba> kampaaniaToad = new ArrayList<>();
+    private static List<Tuba> kampaaniaToad = new ArrayList<>();
 
-    public void lisaKampaaniasse(Tuba tuba) {
+    public static void lisaKampaaniasse(Tuba tuba) {
         kampaaniaToad.add(tuba);
     }
 
-    private Tuba leiaVõitja() {
+    private static Tuba leiaVõitja() {
         int juhuslikArv = (int) Math.round(Math.random() * (kampaaniaToad.size()-1));
         Tuba võitja = kampaaniaToad.get(juhuslikArv);
         return võitja;
     }
 
-    public void muudaVõitjaTuba(Tuba võidetavTuba) {
+    public static void muudaVõitjaTuba(Tuba võidetavTuba) {
         Tuba võitja = leiaVõitja();
         if (võidetavTuba.isKasTubaOnKinni() || võidetavTuba.isKasVIP() == false) {      //juhul kui VIP tuba on juba kinni
             System.out.println("Kamapaanias võidetav tuba ei vasta tingimustele");      // või on tavaline tuba
@@ -30,6 +30,8 @@ public class Kampaania {
         }
 
     }
+
+
 
 
 
