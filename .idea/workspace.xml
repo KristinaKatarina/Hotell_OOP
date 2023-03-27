@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="TubaNeljale tegemine ja väikeste probleemide lahendamine">
+    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="Andmebaasi täitmine">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kampaania.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kampaania.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plaanid ja motted.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plaanid ja motted.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tuba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tuba.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TubaKahele.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TubaKahele.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TubaNeljale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TubaNeljale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VipTuba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VipTuba.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,14 +36,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Kristina/Desktop/OOP/KT1"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kristina/Desktop/OOP/KT1&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -100,7 +97,19 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1679768214080</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="Konstruktori lisamine juhuks kui tuba on vaba">
+      <created>1679769096369</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1679769096369</updated>
+    </task>
+    <task id="LOCAL−00007" summary="Andmebaasi täitmine">
+      <created>1679935248320</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1679935248320</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -110,6 +119,8 @@
     <MESSAGE value="Tuba muutmine abstaktseks klassiks" />
     <MESSAGE value="TubaKahele errori parandamine" />
     <MESSAGE value="TubaNeljale tegemine ja väikeste probleemide lahendamine" />
-    <option name="LAST_COMMIT_MESSAGE" value="TubaNeljale tegemine ja väikeste probleemide lahendamine" />
+    <MESSAGE value="Konstruktori lisamine juhuks kui tuba on vaba" />
+    <MESSAGE value="Andmebaasi täitmine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Andmebaasi täitmine" />
   </component>
 </project>

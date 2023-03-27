@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class TubaNeljale extends Tuba {
+public class TubaNeljale extends Tuba implements VipTuba {
     private int öödeArv;
     private List<String> paketid = new ArrayList<>(List.of("Hommikusöök"));
 
@@ -36,4 +36,8 @@ public class TubaNeljale extends Tuba {
     }
 
 
+    @Override
+    public double VipToaHind() {
+        return hindKokku() + 80; //vip toa hind oleks nt 80 eurot
+    }
 }

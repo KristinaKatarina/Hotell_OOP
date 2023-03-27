@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class TubaKahele extends Tuba {
+public class TubaKahele extends Tuba implements VipTuba {
     // Tegemist on ökonoomia toaga
 
     private int öödeArv;
@@ -43,4 +43,8 @@ public class TubaKahele extends Tuba {
     }
 
 
+    @Override
+    public double VipToaHind() {
+        return hindKokku() + 40; //panin vip toa hinnaks 40 eurot
+    }
 }
