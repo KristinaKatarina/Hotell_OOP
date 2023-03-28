@@ -3,8 +3,8 @@ import java.util.List;
 
 public class TubaNeljale extends Tuba implements VipTuba {
 
-    private int öödeArv;
-    private List<String> paketid = new ArrayList<>(List.of("Hommikusöök:0"));
+    private int öödeArv; // mitu ööd külastajad hotellis veedavad
+    private List<String> paketid = new ArrayList<>(List.of("Hommikusöök:0")); // ekonoomia toa lisa paketid (hommikusöök on alati hinnas)
 
     // juhul kui tuba on kinni
     public TubaNeljale(String hotell, String toaNumber, boolean kasVIP, boolean kasTubaOnKinni, int öödeArv, List<String> lisaPaketid) {
@@ -29,21 +29,23 @@ public class TubaNeljale extends Tuba implements VipTuba {
         this.paketid = paketid;
     }
 
+    // VIP toa hinna arvutamine
     public double VipToaHind() {
         return this.hindKokku() + 60 * this.öödeArv; //vip toa hind oleks nt 80 eurot
     }
 
-
+    // pakettide hinna arvutamine
     double lisaPakettideHind() {
         double pakettideHind = 0;
 
         for (String pakett : paketid) {
-            double paketiHind = (Integer.parseInt(pakett.split(":")[1])) * 1.5; // tegin paketi 1,5 korda kallimaks,
-            pakettideHind += paketiHind;                                            // sest toas on rohkem inimesi
+            double paketiHind = (Integer.parseInt(pakett.split(":")[1])) * 1.5;
+            pakettideHind += paketiHind;
         }
         return pakettideHind;
     }
 
+    // leiame pakettide nimed ilma hinnata
     public List<String> pakettideNimed(){
         List<String> pakettideNimed = new ArrayList<>();
         for (int i = 0; i < paketid.size(); i++) {
@@ -54,7 +56,8 @@ public class TubaNeljale extends Tuba implements VipTuba {
     }
 
     @Override
+    // kõikide broneeritud ööde hind ilma pakettideta
     public double öödeHind() {
-        return 70 * this.öödeArv; // panin ühe öö hinnaks 70
+        return 70 * this.öödeArv; // ühe öö hinnaks on 70 eurot
     }
 }
