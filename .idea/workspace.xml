@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="Hinna arvutamise parandused">
+    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="väiksed muudatused">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hotell/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hotell/Tuba.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/Tuba.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hotell/TubaKahele.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/TubaKahele.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hotell/TubaNeljale.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/TubaNeljale.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kampaania.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KampaaniaKäivitamine.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tuba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tuba.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TubaKahele.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TubaKahele.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TubaNeljale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TubaNeljale.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,14 +39,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kristina/Desktop/OOP/KT1&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Kristina/Desktop/OOP/Hotell"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -138,7 +136,13 @@
       <option name="presentableId" value="LOCAL−00011" />
       <updated>1680015412446</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL−00012" summary="väiksed muudatused">
+      <created>1680020374275</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1680020374275</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -154,6 +158,7 @@
     <MESSAGE value="Main klassi tegemine vol2" />
     <MESSAGE value="toString vormistus" />
     <MESSAGE value="Hinna arvutamise parandused" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hinna arvutamise parandused" />
+    <MESSAGE value="väiksed muudatused" />
+    <option name="LAST_COMMIT_MESSAGE" value="väiksed muudatused" />
   </component>
 </project>
