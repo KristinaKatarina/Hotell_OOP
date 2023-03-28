@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="toString vormistus">
+    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="Hinna arvutamise parandused">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hotell/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hotell/Tuba.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/Tuba.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hotell/TubaKahele.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/TubaKahele.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hotell/TubaNeljale.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/TubaNeljale.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tuba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tuba.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TubaKahele.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TubaKahele.java" afterDir="false" />
@@ -129,7 +132,13 @@
       <option name="presentableId" value="LOCAL−00010" />
       <updated>1680009308845</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL−00011" summary="Hinna arvutamise parandused">
+      <created>1680015412446</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1680015412446</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -144,6 +153,7 @@
     <MESSAGE value="Main klassi tegemine vol1" />
     <MESSAGE value="Main klassi tegemine vol2" />
     <MESSAGE value="toString vormistus" />
-    <option name="LAST_COMMIT_MESSAGE" value="toString vormistus" />
+    <MESSAGE value="Hinna arvutamise parandused" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hinna arvutamise parandused" />
   </component>
 </project>
