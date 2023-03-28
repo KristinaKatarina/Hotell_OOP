@@ -30,11 +30,10 @@ public class TubaKahele extends Tuba implements VipTuba {
         this.paketid = paketid;
     }
 
-
     @Override
     public double öödeHind() {
         // Arvutame kokku kliendi ööde hinna Hotellis.
-        return öödeArv * ööHind;
+        return this.öödeArv * this.ööHind;
     }
 
     @Override
@@ -50,18 +49,16 @@ public class TubaKahele extends Tuba implements VipTuba {
     }
 
     public double VipToaHind() {
-        return hindKokku() + 30 * öödeArv; //panin vip toa hinnaks 40 eurot
+        return this.hindKokku() + 30 * this.öödeArv; //panin vip toa hinnaks 40 eurot
     }
-    public List<String> pakettideNimed(){
-        List<String> pakettideNimed = new ArrayList<>();
-        for (int i = 0; i < paketid.size(); i++) {
-            String nimi = paketid.get(i).split(":")[0];
-            pakettideNimed.add(nimi);
+
+    public String toString() {
+
+        if (!isKasVIP()) {
+            return "Broneerisite toa number: " + this.getToaNumber() + ", hotellis: " + getHotell()
+                    + "\n" + "Broneeringu koguhind on: " + this.hindKokku() + " eurot";
         }
-        return pakettideNimed;
+        return "Broneerisite VIP toa number: " + this.getToaNumber() + ", hotellis: " + getHotell()
+                + "\n" + "Broneeringu koguhind on: " + this.VipToaHind() + " eurot";
     }
-
-
-
-
 }
