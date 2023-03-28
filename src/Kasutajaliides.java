@@ -151,7 +151,6 @@ public class Kasutajaliides {
         }
 
         vastus.add(paketiSoovid);
-        System.out.println(vastus); // Hiljem kustutamiseks.
         return vastus;
     }
 
@@ -180,7 +179,7 @@ public class Kasutajaliides {
         System.out.println("|                                                                        |");
         System.out.println("|            Hea Klient, kahjuks me ei leidnud ühtegi vaba tuba.         |");
         System.out.println("|                                                                        |");
-        System.out.println("|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|");
+        System.out.println("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾");
     }
 
 }

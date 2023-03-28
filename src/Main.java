@@ -23,7 +23,6 @@ public class Main {
             throw new RuntimeException(e);
         }
         return hotellid;
-
     }
 
     public static List<Tuba> loeToad(String failiNimi) {
@@ -35,6 +34,7 @@ public class Main {
                 boolean kasTubaOnKinni = false;
                 boolean kasTubaOnKahele = false;
                 List<String> paketid = new ArrayList<>();
+
                 String rida = sc.nextLine();
                 List<String> tükid = List.of(rida.split(";"));
                 if (tükid.get(2).equals("Kinni")) {
@@ -79,8 +79,6 @@ public class Main {
                     hotellideSidumineTubadega(tuba);
 
                 }
-
-
             }
 
 
@@ -91,6 +89,27 @@ public class Main {
         return toad;
 
 
+    }
+
+    public static List<Tuba> leiaÕigeSuurus(List<Tuba> toad, int suurus) {
+        List<Tuba> sobilikudToad = new ArrayList<>();
+        if (suurus == 1) {
+            for (int i = 0; i < toad.size(); i++) {
+                if (toad.get(i).getClass() == TubaKahele.class) {
+                    sobilikudToad.add(toad.get(i));
+                }
+            }
+            return sobilikudToad;
+        }
+        if (suurus == 2) {
+            for (int i = 0; i < toad.size(); i++) {
+                if (toad.get(i).getClass() == TubaNeljale.class) {
+                    sobilikudToad.add(toad.get(i));
+                }
+            }
+            return sobilikudToad;
+        }
+        return sobilikudToad;
     }
 
     public static void hotellideSidumineTubadega(Tuba tuba) {
@@ -138,6 +157,26 @@ public class Main {
         return sobilikudToad;
     }
 
+    public static List<String> kasutajaPaketid(List<String> paketiNumbrid){
+        List<String> paketid = new ArrayList<>();
+        for (int i = 0; i < paketiNumbrid.size(); i++) {
+            String pakett =  paketiNumbrid.get(i);
+            if(pakett.equals("1")){
+                paketid.add("bassein:10");
+            }
+            else if(pakett.equals("2")){
+                paketid.add("saun:7");
+            }
+            else if(pakett.equals("3")){
+                paketid.add("õhtusöök:15");
+            }
+            else if(pakett.equals("4")){
+                paketid.add("joogid hinnas:20");
+            }
+        }
+        return paketid;
+    }
+
 
     public static void main(String[] args) throws IOException {
         loeToad("Andmebaas.txt");
@@ -149,31 +188,18 @@ public class Main {
         int valitudToaTase = Integer.parseInt((String) kasutajaValikud.get(2).get(0));
         int ööd = Integer.parseInt((String) kasutajaValikud.get(3).get(0));
 
+        List<String> paketid = new ArrayList<>();
+        if(valitudToaTase == 1) {
+            paketid = kasutajaValikud.get(4);
+        }
+
         Hotell valitudHotell = hotellid.get(valitudHotelliNumber - 1);
         List<Tuba> hotelliToad = valitudHotell.getToadHotellis();
 
         // leiame hotelli toad, mis on vabad broneerimiseks.
         List<Tuba> vabadToad = leiaVabadToad(hotelliToad);
 
-        // Klient soovib tuba kahele.
-        if (valitudToaSuurus == 1) {
-            for (int i = 0; i < vabadToad.size(); i++) {
-                if (vabadToad.get(i).getClass() == TubaKahele.class) {
-                    vabadToad.remove(i);
-                    break; // Pole motet ulejaanud toad labi kaia. Kiirem programm :)
-                }
-
-            }
-        }
-        // Klient soovib tuba neljale.
-        else if (valitudToaSuurus == 2) {
-            for (int i = 0; i < vabadToad.size(); i++) {
-                if (vabadToad.get(i).getClass() == TubaNeljale.class) {
-                    vabadToad.remove(i);
-                    break;
-                }
-            }
-        }
+        vabadToad = leiaÕigeSuurus(vabadToad,valitudToaSuurus); //leiame õige suurusega toa
 
         List<Tuba> sobivadToad = leiaVipToad(vabadToad, valitudToaTase); //leiame vip/ekonoomia toad vastavalt kasutaja soovile
 
@@ -188,7 +214,12 @@ public class Main {
             valitudTuba.setKasTubaOnKinni(true);
             valitudTuba.setÖödeArv(ööd);
 
-            kasutajaliides.kuvaBroneering(valitudTuba.getToaNumber(), valitudTuba.getHotell(), valitudTuba.getHotell(), valitudTuba.hindKokku()); // Probleem, kuidas saada Hotelli aadress.
+            if (valitudToaTase == 1 && !paketid.isEmpty()){
+                List<String> valitudPaketid = kasutajaPaketid(paketid);
+                valitudTuba.setPaketid(valitudPaketid);
+            }
+
+            kasutajaliides.kuvaBroneering(valitudTuba.getToaNumber(), valitudTuba.getHotell(), valitudHotell.getAadress(), valitudTuba.hindKokku()); // Probleem, kuidas saada Hotelli aadress.
 
             //valitudTuba.setPaketid();
         }

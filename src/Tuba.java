@@ -27,7 +27,6 @@ abstract class Tuba {
         return kasVIP;
     }
 
-
     public boolean isKasTubaOnKinni() {
         return kasTubaOnKinni;
     }
@@ -42,10 +41,24 @@ abstract class Tuba {
 
     abstract double öödeHind();
 
+    abstract List<String> pakettideNimed();
+    abstract double VipToaHind();
+
     // tegin hindKokku avalikuks, sest see kood on TubaNeljale ja TubaKahele klassides ühine.
     public double hindKokku() {
         // Hind kokku.
-        return this.öödeHind() + this.lisaPakettideHind();
+        return öödeHind() + lisaPakettideHind();
     }
+
+    public String toString() {
+        if (!isKasVIP()) {
+            return "Broneerisite toa number: " + this.getToaNumber()
+                    +", pakettidega: " + pakettideNimed() + ", hotellis: " + getHotell()
+                    + "\n" + "Broneeringu koguhind on: " + hindKokku() + " eurot";
+        }
+        return "Broneerisite VIP toa number: " + this.getToaNumber() + ", hotellis: " + getHotell()
+                + "\n" + "Broneeringu koguhind on: " + this.VipToaHind() + " eurot";
+    }
+
 
 }

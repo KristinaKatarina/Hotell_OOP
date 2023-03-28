@@ -43,4 +43,4 @@ Orbit;16;Vaba;Tavaline;Neljane;0
 Orbit;17;Kinni;Tavaline;Kahene;3;wifi:3
 Orbit;18;Kinni;Tavaline;Neljane;7
 Orbit;19;Kinni;Tavaline;Kahene;3
-Orbit;20;Kinni;Tavaline;Neljane;9;õhtusöök:15
+Orbit;20;Kinni;Tavaline;Neljane;9;õhtusöök:1
