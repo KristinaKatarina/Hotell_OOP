@@ -50,19 +50,16 @@ public class TubaKahele extends Tuba implements VipTuba {
     }
 
     public double VipToaHind() {
-        return this.hindKokku() + 30 * öödeArv; //panin vip toa hinnaks 40 eurot
+        return this.hindKokku() + 30 * this.öödeArv; //panin vip toa hinnaks 40 eurot
     }
 
     public String toString() {
         if (!isKasVIP()) {
-            return "Toa number: " + getToaNumber() +
-                    ", toa paketid on " + paketid +
-                    ", toa hind on " + hindKokku() +
-                    ", tuba on kahele";
+            return "Broneerisite toa number: " + this.getToaNumber() + ", hotellis: " + getHotell()
+                    + "\n" + "Broneeringu koguhind on: " + this.hindKokku() + " eurot";
         }
-        return "Toa number: " + getToaNumber() +
-                ", tegu on VIP toaga, toa hind on " + VipToaHind() +
-                ", tuba on kahele";
+        return "Broneerisite VIP toa number: " + this.getToaNumber() + ", hotellis: " + getHotell()
+                + "\n" + "Broneeringu koguhind on: " + this.VipToaHind() + " eurot";
     }
 
 

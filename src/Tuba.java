@@ -43,7 +43,7 @@ abstract class Tuba {
     // tegin hindKokku avalikuks, sest see kood on TubaNeljale ja TubaKahele klassides ühine
     public double hindKokku() {
         // Hind kokku.
-        return öödeHind() + lisaPakettideHind();
+        return this.öödeHind() + this.lisaPakettideHind();
     }
 
 }

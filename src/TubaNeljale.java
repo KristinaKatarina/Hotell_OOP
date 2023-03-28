@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class TubaNeljale extends Tuba implements VipTuba{
+public class TubaNeljale extends Tuba implements VipTuba {
 
     private int öödeArv;
     private List<String> paketid = new ArrayList<>(List.of("Hommikusöök:0"));
@@ -15,10 +15,9 @@ public class TubaNeljale extends Tuba implements VipTuba{
     }
 
     // juhul kui tuba on vaba (siis ei ole ööde arvu ja paketti teada)
-    public TubaNeljale(String hotell,String toaNumber, boolean kasVIP, boolean kasTubaOnKinni) {
+    public TubaNeljale(String hotell, String toaNumber, boolean kasVIP, boolean kasTubaOnKinni) {
         super(hotell, toaNumber, kasVIP, kasTubaOnKinni);
     }
-
 
 
     public void setÖödeArv(int öödeArv) {
@@ -31,7 +30,7 @@ public class TubaNeljale extends Tuba implements VipTuba{
     }
 
     public double VipToaHind() {
-        return this.hindKokku() + 60*öödeArv; //vip toa hind oleks nt 80 eurot
+        return this.hindKokku() + 60 * this.öödeArv; //vip toa hind oleks nt 80 eurot
     }
 
     @Override
@@ -49,18 +48,15 @@ public class TubaNeljale extends Tuba implements VipTuba{
         }
         return pakettideHind;
     }
+
     public String toString() {
         if (!isKasVIP()) {
-            return "Toa number: " + getToaNumber() +
-                    ", toa paketid on " + paketid +
-                    ", toa hind on " + hindKokku() +
-                    ", tuba on neljale";
+            return "Broneerisite toa number: " + this.getToaNumber() + ", hotellis: " + getHotell()
+                    + "\n" + "Broneeringu koguhind on: " + hindKokku() + " eurot";
         }
-        return "Toa number: " + getToaNumber() +
-                ", tegu on VIP toaga, toa hind on " + VipToaHind() +
-                ", tuba on neljale";
+        return "Broneerisite VIP toa number: " + this.getToaNumber() + ", hotellis: " + getHotell()
+                + "\n" + "Broneeringu koguhind on: " + VipToaHind() + " eurot";
     }
-
 
 
 }

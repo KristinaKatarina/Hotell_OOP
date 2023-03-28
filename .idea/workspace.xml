@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="Main klassi tegemine vol1">
+    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="Main klassi tegemine vol2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hotell/Hotell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/Hotell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hotell/Kampaania.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/Kampaania.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hotell/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hotell/Tuba.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/Tuba.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hotell/TubaKahele.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/TubaKahele.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hotell/TubaNeljale.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/TubaNeljale.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Hotell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hotell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kampaania.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kampaania.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tuba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tuba.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TubaKahele.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TubaKahele.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TubaNeljale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TubaNeljale.java" afterDir="false" />
     </list>
@@ -124,7 +120,13 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1679946934862</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL−00009" summary="Main klassi tegemine vol2">
+      <created>1679957741669</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1679957741669</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -137,6 +139,7 @@
     <MESSAGE value="Konstruktori lisamine juhuks kui tuba on vaba" />
     <MESSAGE value="Andmebaasi täitmine" />
     <MESSAGE value="Main klassi tegemine vol1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Main klassi tegemine vol1" />
+    <MESSAGE value="Main klassi tegemine vol2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main klassi tegemine vol2" />
   </component>
 </project>

@@ -51,13 +51,7 @@ public class Hotell {
 
     @Override
     public String toString() {
-        return "Hotell{" +
-                "riik='" + riik + '\'' +
-                ", aadress='" + aadress + '\'' +
-                ", hotelliReiting=" + hotelliReiting +
-                ", asutamisAasta=" + asutamisAasta +
-                ", toadHotellis=" + toadHotellis +
-                ", klientideHinnangud=" + klientideHinnangud +
-                '}';
+        return "Teie valitud hotelli aadress on: " + riik + ", " + aadress;
+
     }
 }

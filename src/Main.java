@@ -167,12 +167,14 @@ public class Main {
         if (sobivadToad.size() == 0) {
             System.out.println("Kahjuks ei ole hetkel sellist tuba saadaval");
         } else {
-            System.out.println(sobivadToad);
+            //System.out.println(sobivadToad); //kontroll
             int juhuslikArv = (int) Math.round(Math.random() * (sobivadToad.size() - 1));
             Tuba valitudTuba = sobivadToad.get(juhuslikArv);
-            System.out.println(valitudTuba);
             valitudTuba.setKasTubaOnKinni(true);
             valitudTuba.setÖödeArv(ööd);
+            System.out.println(valitudTuba.hindKokku());
+            System.out.println(valitudTuba);
+            System.out.println(valitudHotell);
             //valitudTuba.setPaketid();
         }
 
