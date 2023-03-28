@@ -172,7 +172,6 @@ public class Main {
             Tuba valitudTuba = sobivadToad.get(juhuslikArv);
             valitudTuba.setKasTubaOnKinni(true);
             valitudTuba.setÖödeArv(ööd);
-            System.out.println(valitudTuba.hindKokku());
             System.out.println(valitudTuba);
             System.out.println(valitudHotell);
             //valitudTuba.setPaketid();

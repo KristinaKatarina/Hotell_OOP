@@ -34,7 +34,7 @@ public class TubaKahele extends Tuba implements VipTuba {
     @Override
     public double öödeHind() {
         // Arvutame kokku kliendi ööde hinna Hotellis.
-        return this.öödeArv * this.ööHind;
+        return öödeArv * ööHind;
     }
 
     @Override
@@ -50,7 +50,7 @@ public class TubaKahele extends Tuba implements VipTuba {
     }
 
     public double VipToaHind() {
-        return this.hindKokku() + 30 * this.öödeArv; //panin vip toa hinnaks 40 eurot
+        return hindKokku() + 30 * öödeArv; //panin vip toa hinnaks 40 eurot
     }
 
     public String toString() {

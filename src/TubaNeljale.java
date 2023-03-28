@@ -30,12 +30,12 @@ public class TubaNeljale extends Tuba implements VipTuba {
     }
 
     public double VipToaHind() {
-        return this.hindKokku() + 60 * this.öödeArv; //vip toa hind oleks nt 80 eurot
+        return hindKokku() + 60 * öödeArv; //vip toa hind oleks nt 80 eurot
     }
 
     @Override
     public double öödeHind() {
-        return 70 * this.öödeArv; // panin ühe öö hinnaks 70
+        return 70 * öödeArv; // panin ühe öö hinnaks 70
     }
 
 
