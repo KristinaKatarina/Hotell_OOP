@@ -11,6 +11,8 @@ mitte, ehk kas on kinnises olekus või mitte.
 
 projekti tegemise protsessi kirjeldus (erinevad etapid ja rühmaliikmete osalemine neis);
 
+Esmaselt oli vaja välja mõelda idee, selle jaoks tegime Discordi kõne ning lõpuks otsustasime hotelli broneermissüsteemi kasuks. Kui idee oli lahti mõtestatud, proovisime välja joonistada vajalikud klassid, alamklassid ja liidese millega hiljem tegelema hakata. Samuti ka proovisime kokku leppida mis klassi keegi kirjutab ning kuidas töö üksteise vahel võrdselt ära jaotame. Kui esimene vestlus oli lõppenud, siis asusime tööle. Põhiidee kirjutas valmis Marko ning Kristina arendas juurde muud vajalikud meetodid. Kui mõlemad olime oma püstitatud eesmärgid täitnud, oli aeg järgnevaks vestluseks. Teise koosoleku käigus läksime oma programmis veel rohkem süvitsi ja vestluse käigus jõudsime ka ära kirjutada olulisel määral koodi. Seejärel leppisime kokku uued eesmärgid järgmise päeva õhtuks. Meie viimasel koosolekul oli programmi põhitöö valmis ning vaja oli veel üle vaadata mõned vead ja teha koodis mõned väiksemad muutused. Lõpuks leppisime kokku millal kirjutame rühmatöö kirjeldust.
+
 iga rühmaliikme panus (sh tehtud klassid/meetodid) ja ajakulu (orienteeruvalt):
 
 Marko vastutas klasside Kasutajaliides, Hotell ja TubaKahele eest.
