@@ -1,7 +1,13 @@
 autorite nimed: Marko Smirnov ja Kristina Katarina Kaljumäe
 
-Projekti eesmärgiks oli kirjutada programm, mis sarnaneks hotelli toa broneerimise süsteemile ja laseks kasutajal mõnda hotellituppa broneeringu vormistada. Programmi käivitamisel esmaselt küsitakse kasutajalt millisesse hotelli on soov tuba broneerida, siis küsitakse mis suurusega ja millist klassi (VIP või tavaline) tuba kasutaja otsib, sellele järgneb ööde arv valitud hotellis ning kui valiti tavaline tuba, siis veel küsitakse kas kasutaja soovib mõnda lisapaketti (Bassein, saun, õhtusöök või joogid) ning viimaks kuvatakse kogu vajalik broneeringu info kasutajale. Kui kasutaja valis hoopis VIP valiku, siis automaatselt on selles toas kõik lisapaketid hinna sees ning eraldi neid ei arvestata.
-Seejärel loetakse sisse kasutaja kui ka hotellide andmed ja luuakse vajalikud objektid, see tähendab kasutaja sisendid, hotellide nimed, aadressid, palju tubasi mõnes hotellis on, kas tegemist on tavalise (ekonoomia) toaga või VIP toaga, kas tuba on kahele või neljale inimesele ning kas mõni tuba on juba broneeritud või mitte, ehk kas on kinnises olekus või mitte.
+Projekti eesmärgiks oli kirjutada programm, mis sarnaneks hotelli toa broneerimise süsteemile ja laseks kasutajal mõnda hotellituppa broneeringu vormistada. 
+Programmi käivitamisel esmaselt küsitakse kasutajalt millisesse hotelli on soov tuba broneerida, siis küsitakse mis suurusega ja millist klassi (VIP või tavaline) 
+tuba kasutaja otsib, sellele järgneb ööde arv valitud hotellis ning kui valiti tavaline tuba, siis veel küsitakse kas kasutaja soovib mõnda lisapaketti 
+(Bassein, saun, õhtusöök või joogid) ning viimaks kuvatakse kogu vajalik broneeringu info kasutajale. Kui kasutaja valis hoopis VIP valiku, siis automaatselt on 
+selles toas kõik lisapaketid hinna sees ning eraldi neid ei arvestata.
+Seejärel loetakse sisse kasutaja kui ka hotellide andmed ja luuakse vajalikud objektid, see tähendab kasutaja sisendid, hotellide nimed, aadressid, palju tubasi 
+mõnes hotellis on, kas tegemist on tavalise (ekonoomia) toaga või VIP toaga, kas tuba on kahele või neljale inimesele ning kas mõni tuba on juba broneeritud või 
+mitte, ehk kas on kinnises olekus või mitte.
 
 projekti tegemise protsessi kirjeldus (erinevad etapid ja rühmaliikmete osalemine neis);
 
