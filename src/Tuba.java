@@ -44,7 +44,7 @@ abstract class Tuba {
     abstract List<String> pakettideNimed();
     abstract double VipToaHind();
 
-    // tegin hindKokku avalikuks, sest see kood on TubaNeljale ja TubaKahele klassides ühine.
+
     public double hindKokku() {
         // Hind kokku.
         return öödeHind() + lisaPakettideHind();

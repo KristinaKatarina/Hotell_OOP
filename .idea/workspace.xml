@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="väiksed muudatused">
+    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="TubaNeljale komenteerimine">
+      <change afterPath="$PROJECT_DIR$/src/Kirjeldus.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hotell/Kampaania.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hotell/Kasutajaliides.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/Kasutajaliides.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hotell/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hotell/Tuba.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/Tuba.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hotell/TubaKahele.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/TubaKahele.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hotell/TubaNeljale.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/TubaNeljale.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kampaania.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KampaaniaKäivitamine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tuba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tuba.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,14 +41,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Kristina/Desktop/OOP/Hotell"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kristina/Desktop/OOP/Hotell&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -142,7 +144,19 @@
       <option name="presentableId" value="LOCAL−00012" />
       <updated>1680020374275</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL−00013" summary="Main.java komentaarid ja kampaania klasside eemaldamine">
+      <created>1680037916079</created>
+      <option name="number" value="LOCAL−00013" />
+      <option name="presentableId" value="LOCAL−00013" />
+      <updated>1680037916079</updated>
+    </task>
+    <task id="LOCAL−00014" summary="TubaNeljale komenteerimine">
+      <created>1680038204775</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1680038204776</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -159,6 +173,8 @@
     <MESSAGE value="toString vormistus" />
     <MESSAGE value="Hinna arvutamise parandused" />
     <MESSAGE value="väiksed muudatused" />
-    <option name="LAST_COMMIT_MESSAGE" value="väiksed muudatused" />
+    <MESSAGE value="Main.java komentaarid ja kampaania klasside eemaldamine" />
+    <MESSAGE value="TubaNeljale komenteerimine" />
+    <option name="LAST_COMMIT_MESSAGE" value="TubaNeljale komenteerimine" />
   </component>
 </project>
