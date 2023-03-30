@@ -51,7 +51,10 @@ Marko vastutas klasside Kasutajaliides, Hotell ja TubaKahele eest. Kristina vast
 tekstifailide Andmebaas.txt, Hotellid.txt eest. Tegime koos klassi Tuba ja liidese VipTuba ning tihti panustasime ka üksteise
 klassidesse. Ajakulu oli meil mõlemal orienteeruvalt 9 tundi.
 
-tegemise mured (nt millistest teadmistest/oskustest tundsite projekti tegemisel puudust);
+
+Koodi kirjaoskuse muret ei olnud ning saime mõlemad hästi hakkama. Peamiseks raskuseks oli mõelda tulevikku, ehk kuidas
+me saaksime mõlema tehtud tööd omavahel kokku panna ja lõpuks programmi käima saada nii nagu esialgselt kokku leppisime.
+Kaasa aitas väga palju omavahel suhtlemine, siis jõudsime oma mõtetega samale tasemele.
 
 hinnang oma töö lõpptulemusele (millega saite hästi hakkama ja mis vajab arendamist);
 
@@ -59,14 +62,4 @@ selgitus ja/või näited, kuidas programmi osi eraldi ja programmi tervikuna tes
 
 
 
-Marko vastutas klasside Kasutajaliides, Hotell ja TubaKahele eest. Kristina vastutas klasside Main, TubaNeljale
-ning tekstifailide Andmebaas.txt, Hotellid.txt eest. Tegime koos klassi Tuba ja liidese VipTuba ning panustasime ka
-üksteise klassidesse. Ajakulu oli meil mõlemal orienteeruvalt 9 tundi.
 
-tegemise mured (nt millistest teadmistest/oskustest tundsite projekti tegemisel puudust);
-
-Koodi kirjaoskuse muret ei olnud ning saime mõlemad hästi hakkama. Peamiseks raskuseks oli mõelda tulevikku, ehk kuidas me saaksime mõlema tehtud tööd omavahel kokku panna ja lõpuks programmi käima saada nii nagu esialgselt kokku leppisime. Kaasa aitas väga palju omavahel suhtlemine, siis jõudsime oma mõtetega samale tasemele.
-
-hinnang oma töö lõpptulemusele (millega saite hästi hakkama ja mis vajab arendamist);
-
-selgitus ja/või näited, kuidas programmi osi eraldi ja programmi tervikuna testisite ehk kuidas veendusite, et programm töötab korrektselt.
