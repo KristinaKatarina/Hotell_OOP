@@ -5,7 +5,12 @@ iga klassi kohta eraldi selle eesmärk ja olulisemad meetodid;
 
 projekti tegemise protsessi kirjeldus (erinevad etapid ja rühmaliikmete osalemine neis);
 
-iga rühmaliikme panus (sh tehtud klassid/meetodid) ja ajakulu (orienteeruvalt);
+iga rühmaliikme panus (sh tehtud klassid/meetodid) ja ajakulu (orienteeruvalt):
+
+Marko vastutas klasside Kasutajaliides, Hotell ja TubaKahele eest.
+Kristina vastutas klasside Main, TubaNeljale ning tekstifailide Andmebaas.txt, Hotellid.txt eest.
+Tegime koos klassi Tuba ja liidese VipTuba ning panustasime ka üksteise klassidesse.
+Ajakulu oli meil mõlemal orienteeruvalt 9 tundi.
 
 tegemise mured (nt millistest teadmistest/oskustest tundsite projekti tegemisel puudust);
 

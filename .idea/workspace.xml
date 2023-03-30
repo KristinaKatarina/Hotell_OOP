@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="TubaNeljale komenteerimine">
-      <change afterPath="$PROJECT_DIR$/src/Kirjeldus.txt" afterDir="false" />
+    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="Kirjelduse faili tegemine">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hotell/Kampaania.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hotell/Kasutajaliides.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/Kasutajaliides.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hotell/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hotell/Tuba.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/Tuba.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hotell/TubaKahele.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/TubaKahele.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hotell/TubaNeljale.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hotell/TubaNeljale.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tuba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tuba.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kirjeldus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kirjeldus.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +149,13 @@
       <option name="presentableId" value="LOCAL−00014" />
       <updated>1680038204776</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL−00015" summary="Kirjelduse faili tegemine">
+      <created>1680174429444</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1680174429444</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -175,6 +174,7 @@
     <MESSAGE value="väiksed muudatused" />
     <MESSAGE value="Main.java komentaarid ja kampaania klasside eemaldamine" />
     <MESSAGE value="TubaNeljale komenteerimine" />
-    <option name="LAST_COMMIT_MESSAGE" value="TubaNeljale komenteerimine" />
+    <MESSAGE value="Kirjelduse faili tegemine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kirjelduse faili tegemine" />
   </component>
 </project>
