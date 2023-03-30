@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="Kirjelduse faili ajakulu lisamine">
+    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="Kirjelduse faili muutmine">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kirjeldus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kirjeldus.txt" afterDir="false" />
     </list>
@@ -161,7 +161,19 @@
       <option name="presentableId" value="LOCAL−00016" />
       <updated>1680179916435</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL−00017" summary="Kirjelduse faili muutmine">
+      <created>1680181463865</created>
+      <option name="number" value="LOCAL−00017" />
+      <option name="presentableId" value="LOCAL−00017" />
+      <updated>1680181463865</updated>
+    </task>
+    <task id="LOCAL−00018" summary="Kirjelduse faili muutmine">
+      <created>1680183142575</created>
+      <option name="number" value="LOCAL−00018" />
+      <option name="presentableId" value="LOCAL−00018" />
+      <updated>1680183142575</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -182,6 +194,7 @@
     <MESSAGE value="TubaNeljale komenteerimine" />
     <MESSAGE value="Kirjelduse faili tegemine" />
     <MESSAGE value="Kirjelduse faili ajakulu lisamine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kirjelduse faili ajakulu lisamine" />
+    <MESSAGE value="Kirjelduse faili muutmine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kirjelduse faili muutmine" />
   </component>
 </project>

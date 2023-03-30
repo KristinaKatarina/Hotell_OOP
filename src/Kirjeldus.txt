@@ -14,7 +14,7 @@ ning kas mõni tuba on juba broneeritud või mitte, ehk kas on kinnises olekus v
 
 Viimaks kuvatakse kogu vajalik broneeringu info kasutajale.
 
-iga klassi kohta eraldi selle eesmärk ja olulisemad meetodid:
+
 Klassi Hotell eesmärgiks on teha Hotell-tüüpi objekte, mis aitavad kergesti leida informatsiooni kindla hotelli kohta.
 Selle klassi kõige olulisemad meetod on arvatavasti getToadHotellis ja loeSisseTuba, mille abil saame hotelle ja
 tube omavahel siduda.
@@ -32,10 +32,30 @@ andmeid saada ning tähtis on ka meetod hindKokku, mis arvutab tavalise toa lõp
 Tänu klassile TubaKahele saame luua Tuba-tüüpi objekti, kui tuba on mõeldud kahele inimesele. Tähtsamad meetodid on
 öödeHind ja lisaPakettideHind, mis on vajalikud, et arvutada broneeringu kogu hind.
 
-Tänu klassile TubaNeljale saame luua Tuba-tüüpi objekti, kui tuba on mõeldud neljale inimesele. Tähtsamad meetodid on
-öödeHind ja lisaPakettideHind, mis on vajalikud, et arvutada broneeringu kogu hind.
+Klassi TubaNeljale kasutame, et luua neljale inimesele mõeldud toa korral Tuba-tüüpi objekti. Selles klassis on ka olulisemad
+meetodid öödeHind ja lisaPakettideHind, mis on vajalikud, et arvutada broneeringu kogu hind.
 
-projekti tegemise protsessi kirjeldus (erinevad etapid ja rühmaliikmete osalemine neis);
+
+Esmaselt oli vaja välja mõelda idee, selle jaoks tegime Discordi kõne ning lõpuks otsustasime hotelli broneermissüsteemi
+kasuks. Kui idee oli lahti mõtestatud, proovisime välja joonistada vajalikud klassid, alamklassid ja liidese millega
+hiljem tegelema hakata. Samuti proovisime ka kokku leppida, mis klassi keegi kirjutab ning kuidas töö üksteise vahel
+võrdselt ära jaotame. Kui esimene vestlus oli lõppenud, siis asusime tööle. Põhiidee kirjutas valmis Marko ning Kristina
+arendas juurde muud vajalikud meetodid. Kui mõlemad olime oma püstitatud eesmärgid täitnud, oli aeg järgnevaks vestluseks.
+Teise koosoleku käigus läksime oma programmis veel rohkem süvitsi ja vestluse käigus jõudsime ka ära kirjutada olulisel
+määral koodi. Seejärel leppisime kokku uued eesmärgid järgmise päeva õhtuks. Meie viimasel koosolekul oli programmi
+põhitöö valmis ning vaja oli veel üle vaadata mõned vead ja teha koodis mõned väiksemad muutused. Lõpuks leppisime kokku,
+millal kirjutame rühmatöö kirjeldust.
+
+
+Marko vastutas klasside Kasutajaliides, Hotell ja TubaKahele eest. Kristina vastutas klasside Main, TubaNeljale ning
+tekstifailide Andmebaas.txt, Hotellid.txt eest. Tegime koos klassi Tuba ja liidese VipTuba ning tihti panustasime ka üksteise
+klassidesse. Ajakulu oli meil mõlemal orienteeruvalt 9 tundi.
+
+tegemise mured (nt millistest teadmistest/oskustest tundsite projekti tegemisel puudust);
+
+hinnang oma töö lõpptulemusele (millega saite hästi hakkama ja mis vajab arendamist);
+
+selgitus ja/või näited, kuidas programmi osi eraldi ja programmi tervikuna testisite ehk kuidas veendusite, et programm töötab korrektselt.
 
 
 
