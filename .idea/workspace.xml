@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="Kirjelduse faili tegemine">
+    <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="Kirjelduse faili ajakulu lisamine">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kirjeldus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kirjeldus.txt" afterDir="false" />
     </list>
@@ -155,7 +155,13 @@
       <option name="presentableId" value="LOCAL−00015" />
       <updated>1680174429444</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL−00016" summary="Kirjelduse faili ajakulu lisamine">
+      <created>1680179916435</created>
+      <option name="number" value="LOCAL−00016" />
+      <option name="presentableId" value="LOCAL−00016" />
+      <updated>1680179916435</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -175,6 +181,7 @@
     <MESSAGE value="Main.java komentaarid ja kampaania klasside eemaldamine" />
     <MESSAGE value="TubaNeljale komenteerimine" />
     <MESSAGE value="Kirjelduse faili tegemine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kirjelduse faili tegemine" />
+    <MESSAGE value="Kirjelduse faili ajakulu lisamine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kirjelduse faili ajakulu lisamine" />
   </component>
 </project>
