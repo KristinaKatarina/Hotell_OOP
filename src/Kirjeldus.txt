@@ -1,4 +1,4 @@
-autorite nimed: Marko Smirnov ja Kristina Katarina Kaljumäe
+Autorite nimed: Marko Smirnov ja Kristina Katarina Kaljumäe
 
 
 Projekti eesmärgiks oli kirjutada programm, mis sarnaneks hotelli toa broneerimise süsteemile ja laseks kasutajal mõnda hotellituppa
