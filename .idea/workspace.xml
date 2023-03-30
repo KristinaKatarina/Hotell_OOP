@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="999b0a17-5ec1-4704-8d1f-b07ffba8196a" name="Changes" comment="Kirjelduse faili muutmine">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kirjeldus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kirjeldus.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +172,25 @@
       <option name="presentableId" value="LOCAL−00018" />
       <updated>1680183142575</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL−00019" summary="Kirjelduse faili muutmine">
+      <created>1680183796064</created>
+      <option name="number" value="LOCAL−00019" />
+      <option name="presentableId" value="LOCAL−00019" />
+      <updated>1680183796064</updated>
+    </task>
+    <task id="LOCAL−00020" summary="Kirjelduse faili muutmine">
+      <created>1680183876697</created>
+      <option name="number" value="LOCAL−00020" />
+      <option name="presentableId" value="LOCAL−00020" />
+      <updated>1680183876697</updated>
+    </task>
+    <task id="LOCAL−00021" summary="Kirjelduse faili muutmine">
+      <created>1680184011158</created>
+      <option name="number" value="LOCAL−00021" />
+      <option name="presentableId" value="LOCAL−00021" />
+      <updated>1680184011158</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

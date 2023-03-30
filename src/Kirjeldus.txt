@@ -1,5 +1,6 @@
 autorite nimed: Marko Smirnov ja Kristina Katarina Kaljumäe
 
+
 Projekti eesmärgiks oli kirjutada programm, mis sarnaneks hotelli toa broneerimise süsteemile ja laseks kasutajal mõnda hotellituppa
 broneeringu vormistada.
 
@@ -56,12 +57,18 @@ Koodi kirjaoskuse muret ei olnud ning saime mõlemad hästi hakkama. Peamiseks r
 me saaksime mõlema tehtud tööd omavahel kokku panna ja lõpuks programmi käima saada nii nagu esialgselt kokku leppisime.
 Kaasa aitas väga palju omavahel suhtlemine, siis jõudsime oma mõtetega samale tasemele.
 
-hinnang oma töö lõpptulemusele (millega saite hästi hakkama ja mis vajab arendamist);
 
-Oleme mõlemad tehtud tööga rahul. Saime hästi hakkama erinevate klassidega ja alamklassidega ning osakasime neid omavahel ühendada kuniks tekkis loogiline 
-struktuur. Samuti suutsime kõrvaldada tekkinud vead. Võib olla, mis veel arendamist vajab, on tulevikku mõtlemine ja üksteise töö kokku viimine.
+Oleme mõlemad tehtud tööga rahul. Saime hästi hakkama erinevate klassidega ja alamklassidega ning osakasime neid omavahel
+ühendada kuniks tekkis loogiline struktuur. Samuti suutsime kõrvaldada tekkinud vead. Võib olla, mis veel arendamist vajab,
+on tulevikku mõtlemine ja üksteise töö kokku viimine.
 
-selgitus ja/või näited, kuidas programmi osi eraldi ja programmi tervikuna testisite ehk kuidas veendusite, et programm töötab korrektselt.
+
+Tervikult testisime programmi, muutes tekstifalili Andmebaas.txt ja siis võrreldes, kas väljastatud info broneeringu kohta
+on korrektne. Kõige rohkem testisime, kas broneeringu hind on õige, sest sellega oli ka kõige rohkem probleeme, kuid vaatasime
+ka seda, kas broneeritakse ikka tingimustele vastav tuba ning kas programm töötab kui sobivat tuba ei leidu. Programmi
+osi testisime eraldi enne main meetodi ja Andmebaas.txt valmimist. Tegime Main klassi main meetodis paar Tuba objekti ning
+neid objekte kasutades testisime erinevaid meetodeid. Kasutasime ka toString meetodit, et näha objektide andmeid ja kontrollida
+nende korrektsust.
 
 
 
