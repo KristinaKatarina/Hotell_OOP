@@ -25,7 +25,7 @@ Klassi kõige olulisem meetod on kysiKliendilt, sest tänu sellele saame teada, 
 
 Klass Main saab tekstifailidest ja klassist Kasutajaliides teada, millised toad on kasutajale sobilikud ning valib nende
 hulgast juhuslikult ühe toa ja broneerib selle. Kõige olulisemad meetodid on main, sest seal toimub kasutajale sobiva
-toa leidmine ning meetod loeToad, kus tekstifailist Andmebaas.txt saadakse informatsioon kõikide tubade kohta.
+toa leidmine ning meetod loeToad, kus tekstifailist Andmed.txt saadakse informatsioon kõikide tubade kohta.
 
 Klass Tuba on vajalik, et saada kindla toa kohta informatsioon kergelt kätte. Kõik get meetodid on olulised, et toa kohta
 andmeid saada ning tähtis on ka meetod hindKokku, mis arvutab tavalise toa lõpliku hinna.
@@ -49,7 +49,7 @@ millal kirjutame rühmatöö kirjeldust.
 
 
 Marko vastutas klasside Kasutajaliides, Hotell ja TubaKahele eest. Kristina vastutas klasside Main, TubaNeljale ning
-tekstifailide Andmebaas.txt, Hotellid.txt eest. Tegime koos klassi Tuba ja liidese VipTuba ning tihti panustasime ka üksteise
+tekstifailide Andmed.txt, Hotellid.txt eest. Tegime koos klassi Tuba ja liidese VipTuba ning tihti panustasime ka üksteise
 klassidesse. Ajakulu oli meil mõlemal orienteeruvalt 9 tundi.
 
 
@@ -63,10 +63,10 @@ Oleme mõlemad tehtud tööga rahul. Saime hästi hakkama erinevate klassidega j
 on tulevikku mõtlemine ja üksteise töö kokku viimine.
 
 
-Tervikult testisime programmi, muutes tekstifalili Andmebaas.txt ja siis võrreldes, kas väljastatud info broneeringu kohta
+Tervikult testisime programmi, muutes tekstifalili Andmed.txt ja siis võrreldes, kas väljastatud info broneeringu kohta
 on korrektne. Kõige rohkem testisime, kas broneeringu hind on õige, sest sellega oli ka kõige rohkem probleeme, kuid vaatasime
 ka seda, kas broneeritakse ikka tingimustele vastav tuba ning kas programm töötab kui sobivat tuba ei leidu. Programmi
-osi testisime eraldi enne main meetodi ja Andmebaas.txt valmimist. Tegime Main klassi main meetodis paar Tuba objekti ning
+osi testisime eraldi enne main meetodi ja Andmed.txt valmimist. Tegime Main klassi main meetodis paar Tuba objekti ning
 neid objekte kasutades testisime erinevaid meetodeid. Kasutasime ka toString meetodit, et näha objektide andmeid ja kontrollida
 nende korrektsust.
 
