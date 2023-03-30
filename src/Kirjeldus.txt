@@ -58,6 +58,9 @@ Kaasa aitas väga palju omavahel suhtlemine, siis jõudsime oma mõtetega samale
 
 hinnang oma töö lõpptulemusele (millega saite hästi hakkama ja mis vajab arendamist);
 
+Oleme mõlemad tehtud tööga rahul. Saime hästi hakkama erinevate klassidega ja alamklassidega ning osakasime neid omavahel ühendada kuniks tekkis loogiline 
+struktuur. Samuti suutsime kõrvaldada tekkinud vead. Võib olla, mis veel arendamist vajab, on tulevikku mõtlemine ja üksteise töö kokku viimine.
+
 selgitus ja/või näited, kuidas programmi osi eraldi ja programmi tervikuna testisite ehk kuidas veendusite, et programm töötab korrektselt.
 
 
