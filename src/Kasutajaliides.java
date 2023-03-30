@@ -6,7 +6,10 @@ import java.util.List;
 
 public class Kasutajaliides {
 
-    public List<List> kysiKliendilt() throws IOException { // Tagastab List [valitudHotell, öödeArv, valitudKlass, [pakett1, pakett2, jne]]
+    public List<List> kysiKliendilt() throws IOException {
+        // Kasutajaliides, mis väljastab kliendile info.
+        // Meetod tagastab listi kujul [(valitudHotell), (öödeArv), (valitudKlass), ([pakett1, pakett2 ...])]
+
 
         List<List> vastus = new ArrayList<>();
         BufferedReader sisend = new BufferedReader(new InputStreamReader(System.in));
@@ -132,7 +135,7 @@ public class Kasutajaliides {
                 System.out.println("|                                                                        |");
                 System.out.println("|                   Paketi lisamiseks valige vastav number               |");
                 System.out.println("|                                                                        |");
-                System.out.println("|     1 - Jõusaal      2 - Bassein        3 - Saun      4 - Õhtusöök     |");
+                System.out.println("|   1 - Bassein      2 - Saun      3 - Õhtusöök     4 - Joogid hinnas    |");
                 System.out.println("|                                                                        |");
                 System.out.println("|                   Broneeringu esitamiseks sisestage: x                 |");
                 System.out.println("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾");
@@ -155,9 +158,10 @@ public class Kasutajaliides {
     }
 
     public void kuvaBroneering(String toaNumber, String hotelliNimi, String hotelliAadress, double hindKokku){
+        // Meetod väljastab broneeringu lõpptulemuse.
+        
         System.out.println(" ________________________________________________________________________ ");
         System.out.println("|----------------------------HOTELLI BRONNER 1.0-------------------------|");
-        System.out.println("|                                                                        |");
         System.out.println("|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|");
         System.out.println("|                Hea Klient, sinu broneering on vastu võetud!            |");
         System.out.println("|                                                                        |");
@@ -173,6 +177,8 @@ public class Kasutajaliides {
     }
 
     public void puuduvadToad(){
+        // Meetod väljastab broneeringu mitte õnnestumise teate.
+
         System.out.println(" ________________________________________________________________________ ");
         System.out.println("|----------------------------HOTELLI BRONNER 1.0-------------------------|");
         System.out.println("|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|");

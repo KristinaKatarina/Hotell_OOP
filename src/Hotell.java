@@ -36,6 +36,5 @@ public class Hotell {
     @Override
     public String toString() {
         return "Teie valitud hotelli aadress on: " + riik + ", " + aadress;
-
     }
 }

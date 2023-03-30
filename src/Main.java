@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class Main {
     private static List<Hotell> hotellid = loeHotellid("Hotellid.txt"); // lisame kõik hotellid ühte listi
 
-
     //tekstifailist hotellide andmete saamine
     public static List<Hotell> loeHotellid(String failiNimi) {
         List<Hotell> hotellid = new ArrayList<>();
@@ -75,8 +74,6 @@ public class Main {
                     Tuba tuba;
                     if (kasTubaOnKinni) {
                         tuba = new TubaNeljale(tükid.get(0), tükid.get(1), kasVIP, kasTubaOnKinni, ööd, paketid);
-
-
                     } else {
                         tuba = new TubaNeljale(tükid.get(0), tükid.get(1), kasVIP, kasTubaOnKinni);
                     }
@@ -190,7 +187,7 @@ public class Main {
 
 
     public static void main(String[] args) throws IOException {
-        loeToad("Andmebaas.txt"); // saame tekstifaili andmed
+        loeToad("Andmed.txt"); // saame tekstifaili andmed
         Kasutajaliides kasutajaliides = new Kasutajaliides();
         List<List> kasutajaValikud = kasutajaliides.kysiKliendilt(); // Saame kätte kliendi soovid.
 
@@ -199,6 +196,7 @@ public class Main {
         int valitudToaTase = Integer.parseInt((String) kasutajaValikud.get(2).get(0)); // kas tuba on või ei ole VIP
         int ööd = Integer.parseInt((String) kasutajaValikud.get(3).get(0)); // mitu ööd kasutaja plaanib hotellis veeta
         List<String> paketid = new ArrayList<>(); // kasutaja valitud lisa paketid
+
         // VIP toaga tulevad juba kõik paketid kaasa, seega vaatame lisa pakette ainult tava toa korral
         if (valitudToaTase == 1) {
             paketid = kasutajaValikud.get(4);
@@ -231,8 +229,6 @@ public class Main {
 
             // kuvame broneeringu 
             kasutajaliides.kuvaBroneering(valitudTuba.getToaNumber(), valitudTuba.getHotell(), valitudHotell.getAadress(), valitudTuba.hindKokku());
-
-
         }
 
 

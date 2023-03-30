@@ -12,10 +12,10 @@ public class TubaKahele extends Tuba implements VipTuba {
     public TubaKahele(String hotell, String toaNumber, boolean kasVIP, boolean kasTubaOnKinni, int öödeArv, List<String> lisaPaketid) {
         super(hotell, toaNumber, kasVIP, kasTubaOnKinni);
         this.öödeArv = öödeArv;
-        this.ööHind = 40; // Olgu 1 ökonoomia tuba kahele öö arv 40 eurot.
+        this.ööHind = 40;
 
-        if (!lisaPaketid.isEmpty()) // Kui meie klient ei soovinud kõike VIP teenuseid, vaid üksikuid teenuseid, siis lisame need paketti. Näiteks spaa.
-            paketid.addAll(lisaPaketid); // Kui lisame lisapaketi, siis las olla see formaardis (paketi nimi);(hind). Näiteks spaa;20 . Nii saame lõpus selle 20 muuta Integer ja kokku arvutada hinna.
+        if (!lisaPaketid.isEmpty())
+            paketid.addAll(lisaPaketid);
     }
 
     // juhul kui tuba on vaba (siis ei ole ööde arvu ja paketti teada)
@@ -32,10 +32,14 @@ public class TubaKahele extends Tuba implements VipTuba {
     }
 
     public double VipToaHind() {
-        return this.hindKokku() + 30 * this.öödeArv; //panin vip toa hinnaks 40 eurot
+        // Meetod tagastab VIP toa broneeringu hinna.
+
+        return this.hindKokku() + 30 * this.öödeArv;
     }
 
     public List<String> pakettideNimed(){
+        // Meetod tagastab toale määratud lisapakettide nimed.
+
         List<String> pakettideNimed = new ArrayList<>();
         for (int i = 0; i < paketid.size(); i++) {
             String nimi = paketid.get(i).split(":")[0];
@@ -46,15 +50,16 @@ public class TubaKahele extends Tuba implements VipTuba {
 
     @Override
     public double öödeHind() {
-        // Arvutame kokku kliendi ööde hinna Hotellis.
+        // Meetod arvutab kokku kliendi ööde hinna Hotellis.
+
         return this.öödeArv * this.ööHind;
     }
 
     @Override
     public double lisaPakettideHind() {
-        // Arvutame kokku kliendi pakettide hinna.
-        double pakettideHind = 0;
+        // Meetod arvutab kokku kliendi pakettide hinna.
 
+        double pakettideHind = 0;
         for (String pakett : paketid) {
             double paketiHind = Integer.parseInt(pakett.split(":")[1]); // Näiteks spaa;19.99 saame hinna 19.99.
             pakettideHind += paketiHind;

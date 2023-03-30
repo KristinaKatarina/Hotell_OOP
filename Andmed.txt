@@ -1,0 +1,46 @@
+Monsoon;1;Vaba;VIP;Kahene;0
+Monsoon;2;Vaba;Tavaline;Kahene;0
+Monsoon;3;Kinni;Tavaline;Neljane;5;joogid hinnas:20
+Monsoon;4;Kinni;Tavaline;Kahene;3;õhtusöök:15
+Monsoon;5;Kinni;VIP;Neljane;3
+Monsoon;6;Vaba;Tavaline;Neljane;0
+Monsoon;7;Vaba;Tavaline;Kahene;0
+Monsoon;8;Kinni;Tavaline;Neljane;7
+Monsoon;9;Vaba;Tavaline;Neljane;0
+Monsoon;10;Kinni;VIP;Kahene;8
+Paragon;100;Vaba;VIP;Kahene;0
+Paragon;200;Kinni;VIP;Kahene;4
+Paragon;300;Vaba;VIP;Neljane;0
+Paragon;400;Kinni;VIP;Neljane;6
+Paragon;125;Vaba;Tavaline;Kahene;0
+Paragon;150;Vaba;Tavaline;Neljane;0
+Paragon;175;Kinni;Tavaline;Neljane;3
+Paragon;225;Kinni;Tavaline;Kahene;5;õhtusöök:15, bassein:10
+Paragon;250;Vaba;Tavaline;Neljane;0
+Paragon;275;Kinni;Tavaline;Neljane;12;saun:7, bassein:10
+Paragon;325;Vaba;Tavaline;Kahene;0
+Paragon;350;Kinni;Tavaline;Kahene;2;saun:7
+Paragon;375;Vaba;Tavaline;Neljane;0
+Paragon;425;Kinni;Tavaline;Kahene;7;õhtusöök:15
+Paragon;450;Vaba;Tavaline;Neljane;0
+Paragon;475;Vaba;Tavaline;Neljane;0
+Orbit;1;Kinni;Tavaline;Neljane;2;joogid hinnas:20, õhtusöök:15
+Orbit;2;Vaba;Tavaline;Neljane;0
+Orbit;3;Kinni;Tavaline;Kahene;5;õhtusöök:15
+Orbit;4;Kinni;Tavaline;Neljane;1;1
+Orbit;5;Vaba;Tavaline;Kahene;0
+Orbit;6;Vaba;Tavaline;Neljane;0
+Orbit;7;Kinni;Tavaline;Kahene;4
+Orbit;8;Kinni;Tavaline;Neljane;7;joogid hinnas:20
+Orbit;9;Vaba;Tavaline;Kahene;0
+Orbit;10;Kinni;Tavaline;Kahene;16;joogid hinnas:20
+Orbit;11;Vaba;VIP;Neljane;0
+Orbit;12;Kinni;VIP;Kahene;4
+Orbit;13;Vaba;VIP;Kahene;0
+Orbit;14;Vaba;VIP;Kahene;0
+Orbit;15;Kinni;VIP;Neljane;8
+Orbit;16;Vaba;Tavaline;Neljane;0
+Orbit;17;Kinni;Tavaline;Kahene;3
+Orbit;18;Kinni;Tavaline;Neljane;7
+Orbit;19;Kinni;Tavaline;Kahene;3
+Orbit;20;Kinni;Tavaline;Neljane;9;õhtusöök:15
